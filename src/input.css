@@ -1,6 +1,11 @@
-@tailwind base;
+@import "tailwindcss";
+
+@theme {
+  --color-footer: hsl(233, 12%, 13%);
+}
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 body {
   background-image: url("../img/bg-tablet-pattern.svg");
