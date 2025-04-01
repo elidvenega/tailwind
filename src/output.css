@@ -30,6 +30,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-footer: hsl(233, 12%, 13%);
+    --color-button: oklch(0.596 0.145 163.225);
   }
 }
 @layer base {
@@ -363,6 +364,9 @@
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
+  .bg-button {
+    background-color: var(--color-button);
+  }
   .bg-footer {
     background-color: var(--color-footer);
   }
@@ -574,6 +578,8 @@ body {
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90% -25%;
+  max-width: 100%;
+  height: 100vh;
 }
 #cta {
   background-image: url("../img/bg-simplify-section-desktop.svg");
