@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-footer: hsl(233, 12%, 13%);
+  --color-footer: oklch(55.6% 0 0);
   --color-button: oklch(64.5% 0.246 16.439);  
   /* Emerald color being used 600 */
 }
