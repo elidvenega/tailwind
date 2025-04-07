@@ -10,11 +10,8 @@
     --color-orange-400: oklch(0.75 0.183 55.934);
     --color-orange-500: oklch(0.705 0.213 47.604);
     --color-blue-400: oklch(0.707 0.165 254.624);
-    --color-blue-500: oklch(0.623 0.214 259.815);
-    --color-rose-400: oklch(0.712 0.194 13.428);
     --color-rose-600: oklch(0.586 0.253 17.585);
     --color-gray-50: oklch(0.985 0.002 247.839);
-    --color-gray-900: oklch(0.21 0.034 264.665);
     --color-neutral-50: oklch(0.985 0 0);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -390,9 +387,6 @@
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
   .bg-button {
     background-color: var(--color-button);
   }
@@ -404,9 +398,6 @@
   }
   .bg-orange-200 {
     background-color: var(--color-orange-200);
-  }
-  .bg-orange-400 {
-    background-color: var(--color-orange-400);
   }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
@@ -503,17 +494,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .hover\:bg-gray-900 {
+  .hover\:bg-orange-400 {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-gray-900);
-      }
-    }
-  }
-  .hover\:bg-rose-400 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-rose-400);
+        background-color: var(--color-orange-400);
       }
     }
   }
@@ -521,6 +505,27 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-rose-600);
+      }
+    }
+  }
+  .hover\:text-blue-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-400);
+      }
+    }
+  }
+  .hover\:text-rose-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-rose-600);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
